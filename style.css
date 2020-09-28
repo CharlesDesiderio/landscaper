@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  /* border: 1px solid pink; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-size: 32px;
+}
+
+body {
+  background-image: url('./background.png');
+}
+
+ul {
+  list-style: none;
+}
+
+em {
+  font-size: 20px;
+}
+
+#battleField {
+  background-image: url("./yard.png");
+  background-size: cover;
+  width: 100%;
+}
+
+#message {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 700px;
+  font-size: 20px;
+  padding: 10px;
+  background-image: linear-gradient(#5C5CB9, #00001F);
+  border: 4px solid white;
+  border-radius: 15px;}
+
+#player {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transition: .2s;
+}
+
+#weapon {
+  text-transform: uppercase;
+}
+
+#enemy {
+  position: absolute;
+  top: 43%;
+  right: 25%;
+  transition: .05s;
+}
+
+.weaponImg {
+  height: 100px;
+}
+
+.menu-li:before {
+  padding-right: 15px;
+  font-family: "Font Awesome 5 Free";
+  color: rgba(0, 0, 0, 0);
+  content: '\f0a4';
+}
+
+.menu-li:hover:before {
+  content: '\f0a4';
+  color: white;
+}
+
+#gameScreen {
+  position: relative;
+  width: 700px;
+  margin: auto;
+  height: 600px;
+  background-color: black;
+  border-radius: 0 0 15px 15px;
+}
+
+#battleField {
+  height: 65%;
+  width: 100%;
+}
+
+.bottom {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#menu {
+  background-image: linear-gradient(#5C5CB9, #00001F);
+  border: 4px solid white;
+  border-radius: 15px;
+  height: 100%;
+  width: 44.5%;
+  display: inline-block;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+#stats {
+  background-image: linear-gradient(#5C5CB9, #00001F);
+  border: 4px solid white;
+  border-radius: 15px;
+  height: 100%;
+  width: 55%;
+  display: inline-block;
+  margin: auto;
+  padding: 20px 20px;
+}

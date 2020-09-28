@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landscaper</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="gameScreen">
+    <div id="message"></div>
+    <div id="battleField">
+
+      <div id="player"></div>
+      <div id="enemy"><img class="weaponImg" src="./grass.png" /></div>
+
+    </div>
+    <div class="bottom">
+      <div id="menu">
+        <ul>
+          <li id="attack" class="menu-li">ATTACK</li>
+          <li id="upgrade" class="menu-li">UPGRADE</li>
+          
+
+        </ul>
+      </div>
+      <div id="stats">
+        <ul>
+          <li>MONEY: <span id="money"></span></li>
+          <li>INCOME: <span id="income"></span></li>
+          <li>WEAPON: <span id="weapon"></span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script src="app_ui.js"></script>
+</html>
